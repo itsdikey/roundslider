@@ -1,0 +1,18 @@
+﻿<Window x:Class="Slider.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:slider="clr-namespace:Slider"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <slider:RoundSlider Grid.Row="0" x:Name="RedSlider" Maximum="50" Minimum="-100"/>
+        <slider:RoundSlider Grid.Row="1" x:Name="GreenSlider" Maximum="50" Minimum="-100" />
+        <slider:RoundSlider Grid.Row="2"  x:Name="BlueSlider" Maximum="50" Minimum="-100"/>
+        <Rectangle Name="result" Grid.Row="3"></Rectangle>
+    </Grid>
+</Window>
